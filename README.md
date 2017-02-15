@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/EagleGenomics-cookbooks/awscli-cookbook.svg?branch=master)](https://travis-ci.org/EagleGenomics-cookbooks/awscli-cookbook)
+
+
 awscli Cookbook
 =============
 Installs the AWS Command Line Interface tools and provides a set of LWRPs for use within chef cookbooks.
