@@ -38,7 +38,9 @@ script:
 - KITCHEN_LOCAL_YAML=.kitchen.docker.yml /opt/chefdk/embedded/bin/kitchen verify ${INSTANCE}
 notifications:
   slack:
+    on_success: change
+    on_failure: change
     secure: KQeIoDJCXpNSGMhPNzDaaRI2XqPugrjik+OgJJWSW6Q2OF6Tt6VN0p0WLsiRH3zFSQa7Rhx/cYwys7fLLipJk52pbKgzOGrWTa8iB6zJpjDg7vqEbRdJcRB4XYyw9CKI6hc+PLh986JG5LutC2QsYAPjUADk0x5Atp7feplAvYwicejsaWhd7Rg342UrKdk8rLVzFAzJOA91iqiLTxKbTmi1rq1T2TqidAqxEIreuWzlGJqhO+zaO6NfZdeDRUfsRE/0RGzVr7smHdRj4Dz2k1H9+9Y0e8FLjPCnp1Nyk4Zmjg8ux1wV8RUs50q0NwjjKO2YKxzfM1hNzDiNV91nRrAfCrorzXfBAW9RkRkycHk84HBBsWjb8o1/L4TXG1nweOBNwZGasD7dApRYlgHS1BRYx/sh5OXX/pOpYUxIJMJRex00v3vdOSeLTbs4IP2HCg5d8jTgjt1uyRuaWVyhnc+4pw2JjaW0/N/ALtnOhJqmIW3tzg5JyOEeeoUdVHE+Bel7MHyyzPma/egM1tIp+Q5y6JycQXnrR3aAV2CkB8bbXOzpNrdnDS4C+3wg/Ivdo46bha4f2+z4nlJKBdezn0k1ST3r0EHuCauAW3x6jnMupO9/xQ7ClCumJLQ1ClnVnj+PiJgs/sy7mn1oYwwZrv9ibcY+5lXy2ASZxQBpN1Q=
   email:
     on_success: change
-    on_failure: always
+    on_failure: change
